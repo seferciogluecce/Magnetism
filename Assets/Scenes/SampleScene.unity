@@ -152,11 +152,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c54a07637fcbba43ba784bc10a14dad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rm: 0
   Tag: Magnet
   speed: 0.3
   rotSpeed: 9.73
   charge: 3
-  threshold: 0
+  RotThreshold: 1
+  DisThreshold: 1
 --- !u!65 &224003102
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -353,11 +355,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c54a07637fcbba43ba784bc10a14dad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rm: 2
   Tag: Magnet
   speed: 0.3
   rotSpeed: 5
   charge: -3
-  threshold: 0
+  RotThreshold: 1
+  DisThreshold: 1
 --- !u!65 &845239742
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -546,11 +550,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c54a07637fcbba43ba784bc10a14dad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rm: 1
   Tag: Magnet
   speed: 0.3
   rotSpeed: 5
   charge: 3
-  threshold: 0
+  RotThreshold: 1
+  DisThreshold: 1
 --- !u!65 &1014418821
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -656,11 +662,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c54a07637fcbba43ba784bc10a14dad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rm: 3
   Tag: Magnet
   speed: 0.3
   rotSpeed: 5
   charge: 3
-  threshold: 0
+  RotThreshold: 1
+  DisThreshold: 1
 --- !u!65 &1362593172
 BoxCollider:
   m_ObjectHideFlags: 0
