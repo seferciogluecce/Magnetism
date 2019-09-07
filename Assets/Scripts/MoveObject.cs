@@ -2,7 +2,7 @@
 
 public class MoveObject : MonoBehaviour
 {
-    public int Speed = 44;
+    public int Speed = 12;
 
     void Update()
     {

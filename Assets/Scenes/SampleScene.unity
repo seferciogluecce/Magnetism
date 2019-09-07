@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.4366809, g: 0.48427576, b: 0.5645245, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 224003102}
   - component: {fileID: 224003101}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Grass_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -152,11 +152,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c54a07637fcbba43ba784bc10a14dad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rm: 0
   Tag: Magnet
-  speed: 0.3
-  rotSpeed: 9.73
   charge: 3
+  moveSpeed: 5
+  rotSpeed: 10
   RotThreshold: 1
   DisThreshold: 1
 --- !u!65 &224003102
@@ -226,11 +225,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 224003100}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -2.95}
+  m_LocalPosition: {x: 0, y: 0, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
@@ -260,7 +259,7 @@ Light:
   serializedVersion: 9
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.65
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -305,7 +304,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 6.84e-43, y: 7.1e-44, z: 0, w: -1.1002163e+37}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -316,13 +315,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalRotation: {x: 0.68641037, y: -0.18209772, z: 0.1839231, w: 0.6795981}
+  m_LocalPosition: {x: -0.01, y: 5.04, z: 0.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 90.570984, y: -30, z: 0}
 --- !u!1 &845239740
 GameObject:
   m_ObjectHideFlags: 0
@@ -337,7 +336,7 @@ GameObject:
   - component: {fileID: 845239742}
   - component: {fileID: 845239741}
   m_Layer: 0
-  m_Name: Cube (3)
+  m_Name: Oil_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -355,11 +354,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c54a07637fcbba43ba784bc10a14dad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rm: 2
   Tag: Magnet
-  speed: 0.3
+  charge: -4
+  moveSpeed: 5
   rotSpeed: 5
-  charge: -3
   RotThreshold: 1
   DisThreshold: 1
 --- !u!65 &845239742
@@ -429,7 +427,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 845239740}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.61, y: 0, z: -0.32}
+  m_LocalPosition: {x: -3, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -470,8 +468,8 @@ Camera:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 1, g: 0.800189, b: 0.1462264, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -486,7 +484,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 61.5
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -511,13 +509,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.11128615, y: 0.7636403, z: -0.6210844, w: 0.13683209}
-  m_LocalPosition: {x: -0.8646239, y: 8.30658, z: 1.6834341}
+  m_LocalRotation: {x: 0.0007289623, y: -0.86087435, z: 0.50881547, w: 0.0012911978}
+  m_LocalPosition: {x: 0.09, y: 7.1, z: 4.74}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 61.17, y: -179.824, z: 0.007}
 --- !u!1 &1014418819
 GameObject:
   m_ObjectHideFlags: 0
@@ -532,7 +530,7 @@ GameObject:
   - component: {fileID: 1014418821}
   - component: {fileID: 1014418820}
   m_Layer: 0
-  m_Name: Cube (2)
+  m_Name: Oil_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -550,11 +548,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c54a07637fcbba43ba784bc10a14dad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rm: 1
   Tag: Magnet
-  speed: 0.3
+  charge: -3
+  moveSpeed: 5
   rotSpeed: 5
-  charge: 3
   RotThreshold: 1
   DisThreshold: 1
 --- !u!65 &1014418821
@@ -587,7 +584,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: bb98b45f26a8c7f408f4622754db88f6, type: 2}
+  - {fileID: 2100000, guid: 3300914cdaf7b5b4f9f9585b7c116469, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -624,11 +621,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1014418819}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2.013}
+  m_LocalPosition: {x: 0, y: 0, z: 3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1362593170
 GameObject:
@@ -644,7 +641,7 @@ GameObject:
   - component: {fileID: 1362593172}
   - component: {fileID: 1362593171}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: Grass_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -662,11 +659,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c54a07637fcbba43ba784bc10a14dad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rm: 3
   Tag: Magnet
-  speed: 0.3
+  charge: 4
+  moveSpeed: 5
   rotSpeed: 5
-  charge: 3
   RotThreshold: 1
   DisThreshold: 1
 --- !u!65 &1362593172
@@ -736,11 +732,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1362593170}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.95, y: 0, z: 0}
+  m_LocalPosition: {x: 3, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1759821123
 GameObject:
@@ -757,7 +753,7 @@ GameObject:
   - component: {fileID: 1759821128}
   - component: {fileID: 1759821129}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Water
   m_TagString: Magnet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -830,11 +826,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1759821123}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.08, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1759821128
 Rigidbody:
@@ -864,7 +860,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0086de3f0f6929842988381038df372b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  increment: 5
+  Speed: 12
 --- !u!1 &1781418035
 GameObject:
   m_ObjectHideFlags: 0
@@ -953,7 +949,7 @@ Transform:
   m_GameObject: {fileID: 1781418035}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.74, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.52622, y: 1.52622, z: 1.52622}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
